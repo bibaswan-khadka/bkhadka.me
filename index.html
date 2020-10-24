@@ -1,18 +1,65 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="css/indexstyle.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="indexstyle.css">
         <title>bkhadka.me</title>
     </head>
     <body>
-        <header id="indexpage">
-            <img src= "https://media.giphy.com/media/26xBwdIuRJiAIqHwA/source.gif" width="200" height="150"/>
-            <h1>Welcome To My CS52 Website</h1>
-            <p>This page is preety empty right now but I plan to fill it up throughout the term. You can scroll down to read a short intro about me. </p>
-        </header>
-        <section id="Intro">
-            <p>Hello my name is Bibaswan. I'm a 22 from Davenport, Iowa majoring in Computer Science. This is my first online term 
-                since I was off in the spring, so I'm hoping its a good one. </p>
-        </section>
+        <div class="main_container" id="home">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="#">Bibaswan</a>
+                </div>
+                <div class="navbar_items">
+                    <ul>
+                        <li><a href="#">home</a></li>
+				        <li><a href="#about">about</a></li>
+				        <li><a href="#projects">Projects</a></li>
+				        <li><a href="#contact">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="banner_image">
+                <div class="banner_content">
+                    <h1>Bibaswan Khadka<span></h1>
+                    <p>Dartmouth 22, Computer Science</p>
+                </div>	
+            </div>
+            <div class="about" id="about">
+                <h1 class="title">About me</h1>
+                <p>My name is Bibaswan and I'm a Dartmouth 2022 from Davenport, Iowa. I'm a Computer Science major and a Asian Studies minor. I love building things ranging from videogames, Unix applications and websites. </p>
+                <div class="btn"><a href="https://drive.google.com/file/d/1zUdRS866tUwDPlFHx2OYDkBPuQObWgwp/view?usp=sharing">Resume</a></diV>
+            </div>
+            <div class="projects" id="projects">
+                <h1 class="title">Projects</h1>
+                <p>Here are some short descriptions about projects I have worked on throughout my time at Dartmouth and during internships.</p>
+                <div class="project-holder">
+                    <div class="project_item">
+                        <img src="img/defib.png" alt="image">
+                        <h3>Workplace Defibrillator Simulator</h3>
+                        <p>During my internship at VictoryXR in Spring 2020, I wrote the entire design and implementation of a medically accurate and certified VR workplace simulator in C# and Unity for the Oculus Rift, Oculus Quest and HTC Vive.  </p>
+                    </div>
+                    <div class="project_item">
+                        <img src="img/gif3.gif" alt="image">
+                        <h3>Touchthefire.io</h3>
+                        <p>For the final project in CS52, me and my group created a capture the flag style multiplayer game based on Dartmouth Homecoming.</p>
+                    </div>
+                    <div class="project_item">
+                        <img src="img/tinysearch.png" alt="image">
+                        <h3>TinySearchEngine</h3>
+                        <p>Created a searchengine application in C and Unix, that allowed users to crawl, index and search for websites.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact" id="contact">
+                <h1 class="title">Contact Me</h1>
+                <p>bibaswan.khadka.22@dartmouth.edu</p>
+            </div>
+            <div class="footer">
+                <a href="#">@ 2020 Bibaswan Khadka</a>
+            </div>
+        </div>
     </body>
 </html>

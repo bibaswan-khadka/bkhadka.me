@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+p{
+	margin-bottom: 15px;
+	font-size: 14px;
+	line-height: 20px;
+	color: #a9a9a9;
+}
+
+.main_container{
+	position: relative;
+}
+
+.navbar{
+	width: 100%;
+	height: 65px;
+    display: flex;
+    justify-content: space-around;
+	align-items: center;
+	position: absolute;
+}
+
+.logo a{
+	font-family: 'Allura', cursive;
+	font-size: 32px;
+	color: #fb2274;
+}
+
+.navbar .navbar_items ul{
+    display: flex;
+}
+
+.navbar .navbar_items ul li{
+    text-transform: uppercase;
+    margin: 0 10px;
+}
+
+.navbar .navbar_items ul li a{
+	color: white;
+}
+
+.banner_image{
+	background: url("img/background.jpg") no-repeat top center;
+	background-size: cover;
+    width: 100%;
+	height: 600px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.banner_content{
+	text-align: center;
+	color: white;
+}
+
+.banner_content h1{
+	text-transform: uppercase;
+	line-height: 38px;
+	margin-bottom: 15px;
+}
+
+.banner_content h1 span{
+	color: white;
+}
+
+.about, .projects, .contact{
+	padding: 5% 10%;
+	text-align: center;
+}
+
+.about{
+	background: url("img/self.jpg") no-repeat top center;
+	background-size: cover;
+    width: 100%;
+	height: 800px;
+}
+
+.about p{
+	font-size: 18px;
+	color: white;
+}
+h1.title{
+	margin-bottom: 20px;
+	color: black;
+	font-family: 'Allura', cursive;
+	text-transform: uppercase;
+	font-size: 39px;
+	word-spacing: 25px;
+	letter-spacing: 5px;
+}
+
+.btn a{
+	display: block;
+	width: 180px;
+	height: 35px;
+	border: 2px solid red;
+	line-height: 35px;
+	margin: 25px auto;
+	color: red;
+}
+
+.projects{
+	background:whitesmoke;
+}
+
+.project-holder{
+	display: flex;
+	margin-top: 35px;
+	justify-content: space-between;
+}
+
+.project_item{
+	width: 30%;
+	overflow: hidden;
+}
+
+.project_item img{
+	width: 90%;
+	height: 70%;
+	margin-bottom: 25px;
+	transition: all 0.5s ease;
+}
+
+.project_item:hover img{
+	transform: scale(1.1);
+}
+
+.footer{
+	width: 100%;
+	text-align: center;
+	background: grey;
+	padding: 20px 0;
+}
+
+.footer a{
+	color: white;
+}
+
+@media (max-width: 720px){
+	.navbar{
+		height: auto;
+		flex-direction: column;
+	}
+
+	.navbar ul{
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.logo{
+		margin-bottom: 25px;
+	}
+
+	.navbar ul li{
+		margin-bottom: 5px;
+	}
+
+	.banner_content{
+		margin-top: 35px;
+	}
+}
+
